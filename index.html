@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="Ru">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>Задание №1</title>
+</head>
+<body>
+<header>
+    <div class="wrapper">
+        <div id="logo"></div>
+        <div id="siteName">
+            <p class="text_header">Space№2</p>
+        </div>
+    </div>
+</header>
+
+<nav>
+    <ul class="menu-main">
+        <li><a href="#home" class="current">Домой</a></li>
+        <li><a href="#links">Ссылки</a></li>
+        <li><a href="#forms">Форма</a></li>
+    </ul>
+</nav>
+<div class="border">
+<h1 id="home">Ссылки</h1>
+<ol>
+    <li><a href="http://example.com">Абсолютная гиперссылка</a></li>
+    <li><a href="https://example.com">Абсолютная гиперссылка в протоколе https</a></li>
+    <li><a href="ftp://example.com">FTP без авторизации</a></li>
+    <li><a href="ftp://login.password@example.com">FTP с авторизацией </a></li>
+    <li><a href="https://zen.yandex.ru/media/gamescore/top3-otlichnye-igry-pro-srednie-veka-na-pk-61103fe66dcea005c547c894?&utm_campaign=dbr#kingdom_come_deliverance"> Фрагмент страницы некоторого сайта </a></li>
+    <li><a href="#bottom"> Лечу вниз </a></li>
+    <li><a href="http://example.com/?productid=1234"> Ссылка с двумя параметрами URL</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/Заглавная_страница" title="Wikipedia">Само величество - Wikipedia</a>
+        <a href="https://ru.wikipedia.org/wiki/HTML" title="HTML">HTML на Wiki</a>
+        <a href="https://ru.wikipedia.org/wiki/JavaScript" title="JavaS">JavaS на Wiki</a></li>
+    <li><a title="Зачем куда то ходить , если все нужное рядом">Навести и держать</a></li>
+    <li><a href=""> Пусто, да? Как у студента в кошельке </a></li>
+    <li><a href="http://example.com" rel="nofollow"> Ссылка, по которой запрещен переход поисковикам </a></li>
+    <li><noscript> example.com </noscript> Ссылка, запрещенная для индексации поисковиками</li>
+    <p id="links"></p>
+    <li><a> текст текст </a> <a href="http://google.com" >ссылка </a> <a>текст текст </a></li>
+    <li><a href="image.jpg"> <img src="image.jpg" width="100" alt="Загрузка..."> </a></li>
+    <li><img src="image.jpg" width="100" height="75" usemap="#new" alt="Загрузка...">
+        <p>
+            <map id="new" name="new">
+                <area coords="20,20,50,50" shape="rect"  href="https://yandex.ru/" alt="Загрузка...">
+                <area shape="circle" coords="90,90,10" href="https://kubsu.ru/" alt="Загрузка...">
+            </map>
+        </p>
+    </li>
+    <li><a href="cho-to1.html">Куда-то</a></li>
+    <li><a href="Cho-to/cho-todrugoe.html">Куда-то в другое</a></li>
+    <li><a href="../" title="../">?</a></li>
+    <li><a href="../../" title="../../">???</a></li>
+    <li><a href="/">main</a></li>
+    <form  action="/" method="post">
+        <h1>Таблица</h1>
+        <table>
+            <tr>
+                <th>Заголовок 1</th>
+                <th>Заголовок 2</th>
+                <th>Заголовок 3</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td colspan="2">4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>7</td>
+                <td rowspan="2">8</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>12</td>
+                <td>13</td>
+            </tr>
+        </table>
+        <h1 id="forms">Формы HTML</h1>
+        Поле для ФИО:
+        <label>
+            <input name="Name" placeholder="name">
+        </label>
+        <br>
+        Email
+        <label>
+            <input  name="email" placeholder="email">
+        </label>
+        <br>
+        Год рождения
+        <label>
+            <input type="date" name="BD" value="2001.12.29">
+        </label>
+        <br>
+        Пол
+        <label>
+            <input type="radio" name="male" value="male">
+            Мужской
+        </label>
+        <label>
+            <input type="radio" name="male" value="male+">
+            Супермужской
+        </label>
+        <br>
+    </form>
+    <form  action="/" method="post">
+        Конечности
+        <label>
+            <input type="radio" name="Рука" value="1">
+        </label> 1
+        <label>
+            <input type="radio" name="Нога" value="2">
+        </label> 2
+        <label>
+            <input type="radio" name="Голова" value="3">
+        </label> 3
+        <label>
+            <input type="radio" name="Ухо" value="4">
+        </label> 4
+    </form>
+    <form  action="/" method="post">
+        Супер-пупер способности
+        <label>
+            <select  name="super" multiple="multiple">
+                <option value="z">Invisibility</option>
+                <option value="z2">mode Flash(Ну молния который)</option>
+                <option value="z3">Superpower</option>
+            </select>
+        </label>
+    </form>
+    <form  action="/" method="post">
+        Кто ты?(Биография)
+        <label>
+            <textarea name="bio" placeholder="Для буков"></textarea>
+        </label>
+    </form>
+    <form action="/" method="post">
+        <label>
+            <input type="checkbox" name="check-1">
+            К армии готов.
+        </label>
+        <br>
+        <label>
+            <input type="submit" value="Отправить">
+        </label>
+    </form>
+    <a id="bottom"></a>
+<div id="footer">
+    <p class="footer_text">
+        &copy; Vladislav Ponomarenko 2021
+    </p>
+</div>
+</ol>
+</div>
+</body>
+</html>
